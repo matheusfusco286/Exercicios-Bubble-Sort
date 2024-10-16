@@ -1,0 +1,34 @@
+tarefa 1:
+
+
+def bubble_sort(elemento):
+    n = len(elemento)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if elemento[j] > elemento[j+1]:
+                elemento[j], elemento[j+1] = elemento[j+1], elemento[j]
+    return elemento
+
+lista = [2,-5,7,90,1]
+print("Lista não ordenada: ", lista)
+
+print("Lista ordenada: ", bubble_sort(lista))
+
+
+tarefa 2:
+
+def imprimir_vogais(frase):
+    vogais = "aeiouAEIOU"
+    resultado = ""
+
+    for letra in frase:
+        if letra in vogais:
+            resultado += letra
+
+    return resultado
+
+# Exemplo de uso
+entrada = "Olá, como você está?"
+vogais_encontradas = imprimir_vogais(entrada)
+print("Vogais:", vogais_encontradas)
+
